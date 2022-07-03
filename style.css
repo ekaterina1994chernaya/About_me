@@ -138,3 +138,35 @@ footer{
     padding-top: 7px;
     
 }
+
+@media all and (max-width: 830px) {
+    body { 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,200px);
+    grid-template-rows: auto;
+   }
+}
+
+@media all and (max-width: 650px){
+    main{
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-areas:
+    "A" 
+    "B"
+    "D"
+    "E"
+    "C";
+    }
+    header{
+        min-height: 250px;
+    }
+}
