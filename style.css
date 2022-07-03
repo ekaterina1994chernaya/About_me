@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+}
+
+header{
+    background: linear-gradient(to top left, rgb(204, 110, 168), #00BFFF,pink);
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.head{
+    display:flex; 
+    justify-content: flex-start;  
+    align-items: center;
+}
+
+.my-name{
+    color:aliceblue;
+    font-size: 40px;
+    position: relative;
+}
+
+.navigation{
+    font-size:25px;
+}
+
+main{
+    padding: 0 30px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /*display: flex;*/
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-areas:
+    "A    B    D" 
+    "A    E    C";
+}
+
+.images {
+    grid-area: A;
+  }
+
+  .about-me {
+    grid-area: B;
+  }
+
+  .school {
+    grid-area:D;
+  }
+
+  .work {
+    grid-area: E;
+  }
+
+  .hobby {
+    grid-area: C;
+  }
+    
+.conteiner{
+    max-width: 450px;
+    max-height: 450px;
+    padding-right: 40px;
+    text-align: center;
+    /*justify-content: space-around; */   
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+}
+
+
+.img{
+    border-radius: 10%;
+}
+
+
+.heading{
+    
+    border-radius: 60%;
+    width: max-content;
+    text-align: center; 
+}
+
+.icon{
+    position:absolute;
+}
+
+li+li{
+    margin-top: 10px;
+}
+
+.list {
+    list-style-type: none;
+    
+}
+
+.paragraf{
+    line-height: 1.5;
+}
+
+
+footer{
+    height: 100px;
+    background: linear-gradient(to top left, #00BFFF, powderblue, pink);
+    padding-left: 40px;
+    width: 100%;
+}
+
+.email, .navigation, .telegram{
+    color: #BA55D3;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.email:hover{
+    color:#DEB887;
+}
+
+.navigation:hover{
+    color:#DEB887;
+}
+
+.telegram:hover{
+    color:#DEB887;
+}
+
+.contact{
+    font-size: 20px;
+}
+
+.footer{
+    display:flex;
+    justify-content: center;
+    padding-top: 7px;
+    
+}
