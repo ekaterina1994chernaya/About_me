@@ -175,3 +175,14 @@ footer{
         font-size:18px;
     }
 }
+
+@media all and (max-width: 847px){
+    .my-name{
+        font-size: 25px;
+        position: relative;
+    }
+    
+    .navigation{
+        font-size:14px;
+    }
+}
