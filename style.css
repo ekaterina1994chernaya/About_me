@@ -75,6 +75,8 @@ main{
 
 .img{
     border-radius: 10%;
+    width: 350px; 
+    height:450px;
 }
 
 
@@ -138,22 +140,13 @@ footer{
     padding-top: 7px;
     
 }
-
-@media all and (max-width: 830px) {
-    body { 
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-   }
-
-   main{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,200px);
-    grid-template-rows: auto;
-   }
+@media all and (max-width: 968px){
+    header{
+        min-height: 200px;
+    } 
 }
 
-@media all and (max-width: 650px){
+@media all and (max-width: 847px){
     main{
     display: grid;
     gap: 10px;
@@ -167,6 +160,18 @@ footer{
     "C";
     }
     header{
-        min-height: 250px;
+        min-height: 100px;
+    }
+    .img{
+        width: 300px; 
+        height:400px; 
+    }
+    .my-name{
+        font-size: 30px;
+        position: relative;
+    }
+    
+    .navigation{
+        font-size:18px;
     }
 }
